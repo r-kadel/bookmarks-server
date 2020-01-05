@@ -68,7 +68,6 @@ bookmarksRouter
           description: bookmark.description,
           rating: Number(bookmark.rating),
         })
-
         res.json(bookmark)
       })
       .catch(next)
