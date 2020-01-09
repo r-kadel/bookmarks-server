@@ -21,6 +21,11 @@ const BookmarksService = {
          .where({ id })
          .delete()
    },
+   updateBookmark(knex, id, newFields) {
+      return knex('bookmarks')
+         .where({ id })
+         .update(newFields)
+   }
 }
 
 module.exports = BookmarksService
